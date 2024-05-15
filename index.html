@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
     <meta name="description" content="DEGEN SMERF IS NOT YOUR AVERAGE SMURF; HE MOST DEFINITELY HAS A GAMBLING PROBLEM">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <style>
@@ -20,6 +21,24 @@
     html, body{
         scroll-behavior: smooth;
     }
+    @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
 </style>
 <body class="bg-[#FFF6E2]">
     <nav class="flex justify-between items-center p-4 md:p-6">
@@ -36,81 +55,121 @@
                     <a href="#how">    <li>How to buy</li></a>
                 </ul>
             </div>
+              <!-- <div class="space-x-1 flex">
+                <a href="">
+                    <img src="/radi.png" class="w-8" alt="">
+                </a>
+                <a href="">
+                    <img src="/sol.png" class="w-8" alt="">
+                </a>
+                  <a href="">
+                    <img src="/x.png" class="w-8" alt="">
+                </a>
+                <a href="">
+                    <img src="/tg.png" class="w-8" alt="">
+                </a>
+                <a href="">
+                    <img src="/pink.png" class="w-8" alt="">
+                </a>
+            </div> -->
                 <div>
                     <a href="">
-                        <img src="/ape.png" class="w-14 md:w-20" alt="">
+                        <img src="/ape.png" class="pulse w-16 md:w-24" alt="">
                     </a>
                 </div>
         </nav>
         <section class=" w-screen relative h-fit">
-                <img src="/home.png" class="py-12" alt="">
+                <img src="/home.png" class="py-12 w-screen" alt="">
         </section>
         <section  class=" w-screen h-fit relative  flex justify-center items-center">
-            <img id="abt" src="/about.png" class="w-96 md:w-[50rem] absolute -top-32 md:-top-72" alt="">
+            <img id="abt" src="/about.png" 
+            data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500" class=" w-screen absolute -top-32 md:-top-[20rem]" alt="">
     </section>
 
     <!-- Mobile -->
-    <section  class="md:hidden w-screen h-fit relative flex justify-center items-center">
-        <img id="token" src="/tokenomics.png" class="w-[800px]" alt="">
+    <section  class="md:hidden h-fit relative flex justify-center items-center">
+        <img id="token"  data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="500"  src="/token-mobile.png" class="" alt="">
 </section>
-<section  class=" w-screen h-fit hidden md:flex ">
-    <div  class="grid md:grid-cols-2 p-6  place-items-center">
-        <div>
+<section  class=" w-screen h-fit hidden relative top-32 md:flex ">
+    <div  class="grid md:grid-cols-2 ">
+        <div  data-aos="fade-left"
+     data-aos-easing="linear"
+     data-aos-duration="500" >
             <img src="/toke.png" class="w-96" alt="">
         </div>
-        <div>
-            <img src="/hime.png" alt="">
+        <div  data-aos="fade-right"
+     data-aos-easing="linear"
+     data-aos-duration="500" >
+            <img src="/tokenomics.png" class="md:w-[900px]" alt="">
         </div>
     </div>
 </section>
 <!-- sITEMAP -->
-<section  class="w-screen  h-fit md:hidden flex relative justify-center items-center">
-    <img id="map" src="/SMERFMAP.png" class="w-[800px] " alt="">
+<section  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500"  class="w-screen  h-fit md:hidden flex relative justify-center items-center">
+    <img id="map" src="/SMERFMAP.png" class="w-screen " alt="">
    
+</section>
+<section  class="w-screen  h-fit flex md:hidden relative z-[-1] -top-20 justify-center items-center">
+    <img id="how" src="/how.png"  class="w-screen " alt="">
 </section>
 
 <section  class="w-screen
- bg-cover hidden relative  md:flex  flex-col justify-center items-center">
+ bg-cover hidden relative  md:flex flex-col justify-center items-center">
     <img src="/bubble.png" class="relative -z-10 top-60" alt="">       
  <div class="relative ">
         
-            <img src="/bg.png" class="-top-32 relative" alt="">
+            <img src="/SMERFMAP.png"  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="500"  class="-top-32 relative" alt="">
+        
         </div>
 </section>
 <section  class="w-screen
  bg-cover hidden relative  md:flex  flex-col justify-center items-center">      
  <div class="relative ">
         
-            <img src="/how.png" class="-top-36 relative" alt="">
+            <img src="/how.png"  class="-top-96 w-screen -z-10 relative" alt="">
         </div>
 </section>
 
-<section class="w-screen
- bg-cover hidden relative  md:flex  flex-col justify-center items-center">      
- <div class="relative ">
-        
-            <img src="end.png" class="-z-10 -top-96 relative" alt="">
+
+
+
+<div class="flex flex-col md:min-h-screen">
+    <section class="w-screen bg-cover hidden relative top-12 md:flex flex-col justify-center items-center">      
+        <div class="absolute -top-[44rem] -z-20">
+            <img src="last.png" class="w-screen -top-[10rem] -z-20" alt="">
         </div>
-</section>
-
-<section  class="w-screen  h-fit flex md:hidden relative z-[-1] -top-32 justify-center items-center">
-    <img id="how" src="/how.png" class="w-[800px]" alt="">
-</section>
-
-
- <!-- end -->
-<section class=" w-screen h-fit md:hidden flex relative -top-[200px] -z-10 justify-center items-center">
-   <img src="/end.png" class="w-[800px]" alt="">
-</section>
-<footer class="bg-[#FFF6E2] relative -top-24  p-8">
-        <div class="grid grid-cols-1 md:gap-y-10">
+    </section>
+    
+    <!-- end -->
+       <div class="flex-grow">
+       <section class="w-screen bg-cover flex relative -top-36 md:hidden flex-col justify-center items-center">      
+        <div class=" -top-[44rem] -z-20">
+            <img src="last.png" class="w-screen -top-[10rem] -z-20" alt="">
+        </div>
+    </section>
+    </div>
+    <footer class="bg-[#FFF6E2] py-4 p-2"  data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="500" >
+        <div class="grid grid-cols-1 place-items-center md:gap-y-10">
             <div class="justify-center items-center flex flex-col">
                 <img src="/logo.png" class="w-32 md:w-40" alt="">
                 <p class="font-texts text-md md:text-2xl text-center">
                     DEGEN SMERF IS NOT YOUR AVERAGE SMURF HE MAY HAVE A GAMBLING PROBLEM
-                     <br>
-                     We all have dreams of upgrading our umbro hats to a gucci hat, $SMERF is 0% tax so all the broke smurfs can invest
+                    <br>
+                    We all have dreams of upgrading our umbro hats to a gucci hat, $SMERF is 0% tax so all the broke smurfs can invest
                 </p>
+            </div>
+            <div>
+                <p class="font-texts md:text-2xl">CA:TBA</p>
             </div>
             <div class="space-x-1 mt-6 md:mt-0 flex flex-row justify-center items-center">
                 <a href="">
@@ -119,13 +178,24 @@
                 <a href="">
                     <img src="/sol.png" class="w-14" alt="">
                 </a>
-                    
+                  <a href="">
+                    <img src="/x.png" class="w-14" alt="">
+                </a>
                 <a href="">
-                <img src="/pink.png" class="w-14" alt="">
-              
-            </a>
+                    <img src="/tg.png" class="w-14" alt="">
+                </a>
+                <a href="">
+                    <img src="/pink.png" class="w-14" alt="">
+                </a>
             </div>
         </div>
-</footer>
+    </footer>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
