@@ -11,6 +11,31 @@
     
 </head>
 <style>
+        body{
+            overflow-x: hidden;
+        }
+
+        /* Style the scrollbar */
+        ::-webkit-scrollbar {
+            width: 2px; /* Width of the scrollbar */
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #FFF6E2; /* Color of the track */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #2167ff; /* Color of the handle */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Color of the handle on hover */
+        }
+
     @font-face {
         font-family: texts;
         src: url(/texts/NanumBrushScript-Regular.ttf);
@@ -126,7 +151,7 @@
         
             <img src="/SMERFMAP.png"  data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="500"  class="-top-32 relative" alt="">
+     data-aos-duration="500"  class="-top-32 w-screen relative" alt="">
         
         </div>
 </section>
@@ -141,11 +166,25 @@
 
 
 
-<div class="flex flex-col md:min-h-screen">
+<div class="f">
     <section class="w-screen bg-cover hidden relative top-12 md:flex flex-col justify-center items-center">      
         <div class="absolute -top-[44rem] -z-20">
             <img src="last.png" class="w-screen -top-[10rem] -z-20" alt="">
         </div>
+        <!-- <div class="">
+            <img src="/shelv.png" class="relative -bottom-32 -left-72" alt="">
+        </div>
+        <div class="absolute">
+            <img src="/flower.png" class="relative -bottom-[14rem] -left-[25rem]" alt="">
+            <a href="">
+            <img src="/book-1.png" class="relative bottom-[1rem] -left-[18rem]"  alt="">
+            
+</a>
+            <a href="">
+      
+                <img src="/book-2.png" class="relative bottom-[15rem] -left-[12rem]"  alt="">
+            </a>
+            </div> -->
     </section>
     
     <!-- end -->
@@ -154,12 +193,26 @@
         <div class=" -top-[44rem] -z-20">
             <img src="last.png" class="w-screen -top-[10rem] -z-20" alt="">
         </div>
+        <!-- <div class="">
+            <img src="/shelv.png" class="relative w-16 -bottom-32 -left-72" alt="">
+        </div>
+        <div class="absolute">
+            <img src="/flower.png" class="relative -bottom-[14rem] -left-[25rem]" alt="">
+            <a href="">
+            <img src="/book-1.png" class="relative bottom-[1rem] -left-[18rem]"  alt="">
+            
+</a>
+            <a href="">
+      
+                <img src="/book-2.png" class="relative bottom-[15rem] -left-[12rem]"  alt="">
+            </a>
+            </div> -->
     </section>
     </div>
-    <footer class="bg-[#FFF6E2] py-4 p-2"  data-aos="fade-up"
-     data-aos-easing="linear"
-     data-aos-duration="500" >
-        <div class="grid grid-cols-1 place-items-center md:gap-y-10">
+    <footer class="bg-[#FFF6E2] py-4 my-8 p-12 md:relative top-[27rem]">
+        <div class="grid grid-cols-1 place-items-center md:gap-y-8" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="500">
             <div class="justify-center items-center flex flex-col">
                 <img src="/logo.png" class="w-32 md:w-40" alt="">
                 <p class="font-texts text-md md:text-2xl text-center">
@@ -178,10 +231,10 @@
                 <a href="">
                     <img src="/sol.png" class="w-14" alt="">
                 </a>
-                  <a href="">
+                  <a href="https://twitter.com/DegenSmerfCoin">
                     <img src="/x.png" class="w-14" alt="">
                 </a>
-                <a href="">
+                <a href="https://t.me/degensmerfcoin">
                     <img src="/tg.png" class="w-14" alt="">
                 </a>
                 <a href="">
