@@ -57,6 +57,23 @@
     transform: scale(1);
   }
 }
+.floating-element {
+    position: relative;
+    animation: floatAnimation 3s infinite ease-in-out;
+  }
+
+  /* Keyframes for the floating animation */
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
 .pulse {
   animation-name: pulse;
@@ -119,7 +136,7 @@
      data-aos-easing="linear"
      data-aos-duration="1000"  src="/token-mobile.png" class="" alt="">
 </section>
-<section  class=" w-screen h-fit hidden relative top-32 md:flex ">
+<section  class=" w-screen h-fit hidden relative top-80 md:flex ">
     <div  class="grid md:grid-cols-2 ">
         <div  data-aos="fade-left"
      data-aos-easing="linear"
@@ -136,8 +153,8 @@
 <!-- sITEMAP -->
 <section  data-aos="fade-down"
      data-aos-easing="linear"
-     data-aos-duration="500"  class="w-screen  h-fit md:hidden flex relative justify-center items-center">
-    <img id="map" src="/SMERFMAP.png" class="w-screen " alt="">
+     data-aos-duration="500"  class="w-screen h-fit md:hidden flexjustify-center items-center">
+    <img id="map" src="/SMERFMAP.png" class="w-screen  " alt="">
    
 </section>
 <section  class="w-screen  h-fit flex md:hidden relative z-[-1] -top-20 justify-center items-center">
@@ -159,7 +176,7 @@
  bg-cover hidden relative  md:flex  flex-col justify-center items-center">      
  <div class="relative ">
         
-            <img src="/how.png"  class="-top-[-5rem] w-screen -z-10 relative" alt="">
+            <img src="/how.png"  class="-top-[-200px] w-screen -z-10 relative" alt="">
         </div>
 </section>
 
@@ -167,31 +184,73 @@
 
 
 
-    <section class="w-screen h-fit bg-cover hidden md:block">      
+    <section class="w-screen h-fit  bg-cover hidden md:block">      
         <div class="">
-            <img src="last.png" class="relative -top-36 -z-20 w-screen" alt="">
-        </div>
-        <!-- <div class="">
-            <img src="/shelv.png" class="relative -bottom-32 -left-72" alt="">
-        </div>
-        <div class="absolute">
-            <img src="/flower.png" class="relative -bottom-[14rem] -left-[25rem]" alt="">
-            <a href="">
-            <img src="/book-1.png" class="relative bottom-[1rem] -left-[18rem]"  alt="">
-            
-</a>
-            <a href="">
-      
-                <img src="/book-2.png" class="relative bottom-[15rem] -left-[12rem]"  alt="">
+            <img src="end-mob.png" class="relative -z-20 -top-3   w-screen" alt="">
+                  <!--  bOOKS -->
+            <div class="relative bottom-[600px] left-48 floating-element">
+                <img src="/shelv.png" class="" alt="">
+                <img src="/flower.png" class=" -top-[210px] left-4 absolute " alt="">
+               
+                <a href="" >
+                <img src="/book-1.png" class="hover:-translate-y-4 duration-200 transition-all ease-linear -top-[210px] left-36 absolute " alt="">
+           
             </a>
-            </div> -->
+            <a href="" >
+                <img src="/book-2.png" class="hover:-translate-y-4 duration-200 transition-all ease-linear -top-[210px] left-56 absolute " alt="">
+            </a>
+        </div>
+       
+        <!-- Books -2 -->
+        <div class="relative  bottom-[900px] left-[800px] floating-element">
+            <img src="/shelf-2.png" class="" alt="">
+            <a href="#" class="">
+            <img src="/book-3.png"  class="hover:-translate-y-4 duration-200 transition-all ease-linear -top-[180px] left-6 absolute " alt="">
+        </a>
+        <a href="" class="hover:-translate-y-4 duration-200 transition-all ease-linear">
+            <img src="/book-4.png" class="hover:-translate-y-4 duration-200 transition-all ease-linear -top-[180px] left-28 absolute " alt="">
+        </a>
+        <a href="https://hello.com" class="">
+            <img src="/book-5.png" class="-top-[180px] hover:-translate-y-4 duration-200 transition-all ease-linear left-72 absolute " alt="">
+        </a>
+        </div>
+    </div>
+      
     </section>
     
     <!-- end -->
     
-       <section class="w-screen bg-cover flex relative -top-36 md:hidden flex-col justify-center items-center">      
-        <div class=" -top-[44rem] -z-20">
-            <img src="last.png" class="w-screen -top-[10rem] -z-20" alt="">
+       <section class="w-screen bg-cover flex  md:hidden flex-col justify-center items-center">      
+        <div class=" ">
+            <img src="/end-mob.png" class="w-screen relative -top-[10rem] -z-20" alt="">
+
+            <!--  bOOKS -->
+            <div class="relative bottom-[300px] left-16 floating-element">
+                <img src="/shelv.png" class="w-32" alt="">
+                <img src="/flower.png" class="w-8 -top-[55px] left-4 absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+               
+                <a href="" target="_blank">
+                <img src="/book-1.png" class="w-7 -top-[60px] left-12 absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+           
+            </a>
+            <a href="" target="_blank">
+                <img src="/book-2.png" class="w-10 -top-[50px] left-[75px] absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+            </a>
+            </div>
+
+            <!-- Books -2 -->
+            <div class="relative bottom-[400px] left-60 floating-element">
+                <img src="/shelf-2.png" class="w-32" alt="">
+                <a href="https://t.me/degensmerfcoin" target="_blank">
+                <img src="/book-3.png" class="w-8 -top-[55px] left-4 absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+            </a>
+            <a  href="https://t.me/degensmerfcoin" target="_blank">
+                <img src="/book-4.png" class="w-9 -top-[40px] left-12 absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+            </a>
+            <a href="" target="_blank">
+                <img src="/book-5.png" class="w-9 -top-[50px] left-20 absolute hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+            </a>
+            </div>  
         </div>
         <!-- <div class="">
             <img src="/shelv.png" class="relative w-16 -bottom-32 -left-72" alt="">
@@ -209,7 +268,7 @@
             </div> -->
     </section>
  
-    <footer class="bg-[#FFF6E2] py-4 md:relative md:-top-16 p-12">
+    <footer class="bg-[#FFF6E2] py-4 relative md:-top-16 -top-16  p-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 place-items-center md:gap-y-8" data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="500">
@@ -226,19 +285,19 @@
            
                
             <div class="space-x-1 mt-6 md:mt-0 flex flex-row justify-center items-center">
-                <a href="">
+                <a href="" target="_blank">
                     <img src="/radi.png" class="w-14 hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
                 </a>
-                <a href="">
-                    <img src="/sol.png" class="w-14  hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+                <a href="" target="_blank">
+                    <img src="/sol.png" class="w-14 hover:-translate-y-4 duration-200 transition-all ease-linear " alt="">
                 </a>
                   <a href="https://twitter.com/DegenSmerfCoin" target="_blank">
-                    <img src="/x.png" class="w-14  hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+                    <img src="/x.png" class="w-14 hover:-translate-y-4 duration-200 transition-all ease-linear " alt="">
                 </a>
                 <a href="https://t.me/degensmerfcoin" target="_blank">
-                    <img src="/tg.png" class="w-14  hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
+                    <img src="/tg.png" class="w-14 hover:-translate-y-4 duration-200 transition-all ease-linear " alt="">
                 </a>
-                <a href="">
+                <a href="" target="_blank">
                     <img src="/pink.png" class="w-14  hover:-translate-y-4 duration-200 transition-all ease-linear" alt="">
                 </a>
                
